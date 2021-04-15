@@ -14,7 +14,6 @@ export default class GeoReview{
 
   async onInit(){
     document.addEventListener('submit', this.onDocumentSubmit.bind(this))
-
     this.mapStorage.getCoords()
       .then(coords => {
         coords.forEach( el=>{
@@ -23,7 +22,7 @@ export default class GeoReview{
           }
         })
       })
-      .catch( err => console.log(err) );
+      .catch( err => {console.log(err)} );
   }
 
   createReviewContent(coords, data = {}){
@@ -52,13 +51,15 @@ export default class GeoReview{
         const coords = JSON.parse(revForm.dataset.coords)
         const date = new Date();
 
+        const formateDate = date => date < 10 ? `0${date}` : date;
+
         const data = {
           coords,
           review: {
             name: revForm.querySelector('[data-field=name]').value,
             place: revForm.querySelector('[data-field=place]').value,
             content: revForm.querySelector('[data-field=content]').value,
-            date: `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`,
+            date: `${date.getDate()}.${formateDate(date.getMonth()+1)}.${date.getFullYear()}`,
           }
         };
 
