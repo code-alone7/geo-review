@@ -1,0 +1,41 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  
+  &__title{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &__row{
+    margin-bottom: 10px;
+    display: flex;
+    &:last-child{
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input{
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #CFCFCF;
+    padding: 11px;
+    flex: 1 0;
+
+    &:focus{
+      border-color: #1371C8;
+    }
+
+    &--textarea{
+      height: 98px;
+      resize: none;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+  &__btn{
+    align-self: flex-start;
+  }
+
+}

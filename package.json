@@ -1,0 +1,41 @@
+{
+  "name": "georev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config ./webpack.config.js",
+    "build": "webpack --config ./webpack.config.js --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "*",
+    "css-loader": "^5.2.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "import-glob-loader": "^1.1.0",
+    "mini-css-extract-plugin": "^1.4.1",
+    "node-sass-glob-importer": "^5.3.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "svg-sprite-loader": "^6.0.5",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "core-js": "^3.10.1",
+    "fs": "*",
+    "handlebars-loader": "^1.7.1",
+    "normalize.css": "^8.0.1",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "svg-transform-loader": "^2.0.13",
+    "svgo-loader": "^3.0.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

@@ -1,0 +1,33 @@
+{{#if reviews}}
+<div class="reviews">
+  <ul class="reviews__list">
+  {{#each reviews}}
+    <li class="reviews__item review">
+      <div class="review__header">
+        <span class="review__name">{{name}}</span>
+        <span class="review__place">{{place}}</span>
+        <span class="review__date">{{date}}</span>
+      </div>
+      <div class="review__content">
+        <p>{{content}}</p>
+      </div>
+    </li>
+  {{/each}}
+  </ul>
+</div>      
+{{/if}}
+<form class="form js-review-form">
+  <div class="form__title">Отзыв:</div>
+  <div class="form__row">
+    <input data-field="name" class="form__input" placeholder="Укажите ваше имя">
+  </div>
+  <div class="form__row">
+    <input data-field="place" class="form__input" placeholder="Укажите место">
+  </div>
+  <div class="form__row">
+    <textarea data-field="content" class="form__input form__input--textarea" placeholder="Оставить отзыв"></textarea>
+  </div>
+  <button class="form__btn btn">
+    Добавить
+  </button>
+</form>
