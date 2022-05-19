@@ -23,11 +23,6 @@ module.exports = env => {
     mode: isProd ? 'production' : 'development',
     module: {
       rules: [
-        /* {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: 'babel-loader',
-        }, */
         {
           test: /\.(scss|css)$/,
           use: [

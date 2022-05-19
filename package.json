@@ -25,11 +25,7 @@
     "sass-loader": "^11.0.1",
     "svg-sprite-loader": "^6.0.5",
     "webpack": "^5.31.2",
-    "webpack-cli": "^4.6.0"
-  },
-  "dependencies": {
-    "core-js": "^3.10.1",
-    "fs": "*",
+    "webpack-cli": "^4.6.0",
     "handlebars-loader": "^1.7.1",
     "normalize.css": "^8.0.1",
     "postcss-loader": "^5.2.0",
@@ -37,5 +33,9 @@
     "svg-transform-loader": "^2.0.13",
     "svgo-loader": "^3.0.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "core-js": "^3.10.1",
+    "fs": "*"
   }
 }
